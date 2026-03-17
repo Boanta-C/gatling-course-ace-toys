@@ -1,0 +1,30 @@
+# Build output
+/target/
+
+# IntelliJ
+/.idea/
+/*.iml
+/out/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env / secrets
+.env
+.env.*
+*.local
+secret.*
+secrets.*
+**/application-local.*
+**/application-dev.*
+**/config-local.*
+**/config-dev.*
+
+# Optional: Gatling local overrides / private test data
+/src/test/resources/private/
+/src/test/resources/secrets/
+/src/test/resources/*.private.*
