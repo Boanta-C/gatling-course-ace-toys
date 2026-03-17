@@ -9,9 +9,9 @@ import static io.gatling.javaapi.core.CoreDsl.*;
 
 public class TestPopulation {
 
-    private static final int USER_COUNT = Integer.parseInt(System.getProperty("USERS", "5"));
+    private static final int USER_COUNT = Integer.parseInt(System.getenv("USERS"));
     private static final Duration RAMP_DURATION = Duration.ofSeconds(Integer.parseInt(System.
-            getProperty("RAMP_DURATION", "10")));
+            getenv("RAMP_DURATION")));
 
     public static PopulationBuilder instantUsers =
             TestScenario.defaultLoadTest
